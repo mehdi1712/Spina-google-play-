@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import NavBar from "./Components/NavBar"
+import Table from "./Components/Table"
+import { useAllApps } from "./hooks/index"
+import CircularProgress from "@material-ui/core/CircularProgress"
+import TabProvider from "./hooks/TabProvider"
+import DialogProvider from "./hooks/DialogProvider"
+import DetailProvider from "./hooks/DetailProvider"
+import FullScreenDialog from "./Components/Dialog"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   const { data: Apps, isLoading } = useAllApps()
+
+   return (
+      <TabProvider>
+         <DialogProvider>
+            <DetailProvider>
+               <div className="App">
+                  <NavBar />
+                  {isLoading ? <CircularProgress /> : <Table data={Apps} />}
+               </div>
+               <FullScreenDialog />
+            </DetailProvider>
+         </DialogProvider>
+      </TabProvider>
+   )
 }
 
-export default App;
+export default App

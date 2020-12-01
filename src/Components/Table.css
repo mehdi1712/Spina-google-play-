@@ -1,0 +1,33 @@
+/*style={{ height: 400, width: "100%", textAlign: "center" }}*/
+.data-grid:hover {
+   cursor: pointer;
+}
+.table-root {
+   height: 500px;
+   width: 100%;
+   text-align: start;
+   margin-top: 1rem;
+}
+
+.MuiDataGrid-root {
+   background-color: #333333;
+   color: white !important;
+}
+.MuiDataGrid-root .MuiDataGrid-columnsContainer {
+   border-radius: 5px;
+   color: white !important;
+   background-color: brown;
+}
+.MuiTablePagination-root:last-child {
+   color: blanchedalmond !important;
+}
+
+.MuiDataGrid-root .MuiDataGrid-footer {
+   background-color: brown;
+}
+.MuiDataGrid-root .MuiDataGrid-columnSeparator {
+   display: none !important;
+}
+*:focus {
+   outline: none !important;
+}

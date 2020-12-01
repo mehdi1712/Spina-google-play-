@@ -1,0 +1,7 @@
+.MuiAppBar-colorPrimary {
+   color: white;
+}
+.toolbar {
+   display: flex;
+   justify-content: space-between;
+}

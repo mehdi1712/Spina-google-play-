@@ -1,0 +1,14 @@
+.MuiAppBar-colorPrimary {
+   display: flex;
+   min-height: 60px;
+   background-color: #333333 !important;
+   text-align: center !important;
+   justify-content: center;
+   align-items: center;
+}
+.MuiBottomNavigation-root {
+   background-color: brown !important;
+}
+.MuiBottomNavigationAction-root.Mui-selected {
+   color: white !important;
+}
