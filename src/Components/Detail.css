@@ -1,0 +1,19 @@
+.root-list {
+   display: flex;
+   justify-content: space-around;
+   flex-flow: row wrap;
+}
+.paper {
+   margin-top: 2rem;
+   background-color: #333333 !important;
+}
+.MuiListItem-gutters {
+   color: white;
+   margin: 2rem !important;
+   width: 25% !important;
+}
+
+.MuiTypography-colorTextSecondary {
+   margin-top: 1rem !important;
+   color: #c7c7c7 !important;
+}

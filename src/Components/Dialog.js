@@ -7,6 +7,7 @@ import IconButton from "@material-ui/core/IconButton"
 import Typography from "@material-ui/core/Typography"
 import CloseIcon from "@material-ui/icons/Close"
 import Slide from "@material-ui/core/Slide"
+import Detail from "./Detail"
 import { useToggleDialogActions, useDialog } from "../hooks/DialogProvider"
 import { useAppName } from "../hooks/DetailProvider"
 import { useApp } from "../hooks/index"
@@ -15,10 +16,10 @@ import "./Dialog.css"
 const useStyles = makeStyles((theme) => ({
    appBar: {
       position: "relative",
+      display: "block",
    },
    title: {
       marginLeft: theme.spacing(2),
-      flex: 1,
    },
 }))
 
@@ -54,14 +55,15 @@ export default function FullScreenDialog() {
          <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
             <AppBar className={classes.appBar}>
                <Toolbar className="toolbar">
-                  <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
-                     <CloseIcon />
-                  </IconButton>
                   <Typography variant="h6" className={classes.title}>
                      {data ? data.app.name : "app name"}
                   </Typography>
+                  <IconButton edge="start" color="inherit" onClick={handleClose} aria-label="close">
+                     <CloseIcon />
+                  </IconButton>
                </Toolbar>
             </AppBar>
+            <Detail />
          </Dialog>
       </div>
    )
