@@ -56,7 +56,7 @@ export default function FullScreenDialog() {
             </AppBar>
             <Detail data={data} />
 
-            {data && (
+            {data && data.reviews.length !== 0 && (
                <Container className="comments">
                   <Typography variant="h4" className="header-comments">
                      Comments

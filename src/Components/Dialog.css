@@ -9,3 +9,6 @@
    color: white;
    margin-bottom: 2rem !important;
 }
+.MuiPaper-outlined {
+   margin-bottom: 1rem;
+}

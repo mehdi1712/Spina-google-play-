@@ -1,8 +1,8 @@
 .comments {
-   margin-top: 1rem;
    padding-top: 2rem;
    background-color: brown;
    border-radius: 5px;
+   margin-bottom: 1rem;
 }
 
 .MuiAccordion-rounded:last-child {
@@ -15,7 +15,4 @@
 }
 .MuiAccordion-root.Mui-expanded:last-child {
    margin-bottom: 1rem !important;
-}
-.MuiAccordionSummary-expandIcon {
-   color: white !important;
 }
