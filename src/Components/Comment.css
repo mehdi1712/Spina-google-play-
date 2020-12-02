@@ -1,0 +1,21 @@
+.comments {
+   margin-top: 1rem;
+   padding-top: 2rem;
+   background-color: brown;
+   border-radius: 5px;
+}
+
+.MuiAccordion-rounded:last-child {
+   color: white;
+   background-color: #333333 !important;
+   margin-bottom: 1rem;
+}
+.MuiAccordion-rounded:last-child {
+   margin-bottom: 1rem;
+}
+.MuiAccordion-root.Mui-expanded:last-child {
+   margin-bottom: 1rem !important;
+}
+.MuiAccordionSummary-expandIcon {
+   color: white !important;
+}
