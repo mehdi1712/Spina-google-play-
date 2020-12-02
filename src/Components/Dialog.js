@@ -63,7 +63,7 @@ export default function FullScreenDialog() {
                   </IconButton>
                </Toolbar>
             </AppBar>
-            <Detail />
+            <Detail data={data} />
          </Dialog>
       </div>
    )
